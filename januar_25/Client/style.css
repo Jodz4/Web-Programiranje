@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.glavni-kontejner {
+    display: flex;
+    min-height: 100vh;
+}
+
+.leva-strana {
+    width: 500px; /* Striktno po zahtevu zadatka */
+    min-width: 500px;
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-right: 2px solid #bbb;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.desni-panel {
+    flex-grow: 1;
+    display: grid;
+    /* Automatski broj kolona koje popunjavaju prostor */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    align-content: start; /* Kartice se ređaju od vrha */
+}
+
+/* Kontejneri za formu i filtere */
+.korisnik-con, .sekcija-filteri {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Ključno poravnanje za labele i inpute */
+.red {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.red label {
+    flex: 1; /* Zauzima sav preostali prostor levo */
+    font-weight: 600;
+    color: #333;
+}
+
+.red input, select {
+    flex: 2; /* Input je uvek iste širine (2/3 reda) */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.red input:focus {
+    border-color: #007bff;
+}
+
+/* Dugme za filtriranje unutar leve kolone */
+.sekcija-filteri button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.sekcija-filteri button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Kartice automobila */
+.auto-kartica {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.auto-kartica:hover {
+    transform: translateY(-3px);
+}
+
+.auto-kartica div {
+    font-size: 0.95em;
+}
+
+.auto-kartica button {
+    margin-top: auto; /* Gura dugme na dno kartice */
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.auto-kartica button:disabled {
+    background-color: #bbb;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Specifične boje iz zadatka */
+/* Ove klase će se primenjivati preko JS style.backgroundColor */
+/* Slobodna: #8f8 (svetlije zelena), Zauzeta: #f88 (svetlije crvena) */

@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skladisteDiv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skladiste-red {
+    display: flex;
+    min-height: 60px;
+    border: 1px solid #333;
+    background-color: white;
+    width: 100%;
+}
+
+.element-skladista {
+    display: flex;
+    background-color: #7fffd4;
+    border: 0.5px solid #333;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Ispravljeno Š */
+.element-skladista:hover {
+    background-color: #66e0bb;
+}
+
+.formaDiv {
+    width: 350px;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forma-red {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.forma-label {
+    width: 100px; 
+    font-size: 14px;
+}
+
+.forma-input {
+    flex-grow: 1; 
+    padding: 5px;
+}
+
+.btn-list {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    width: 100%;
+}

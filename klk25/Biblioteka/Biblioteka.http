@@ -1,0 +1,36 @@
+@HostAddress = http://localhost:5215
+
+GET {{HostAddress}}/Biblioteka/PreuzmiBiblioteke
+Accept: application/json
+
+###
+
+GET {{HostAddress}}/Biblioteka/PronadjiKnjigePoKriterijumu/1/a
+Accept: application/json
+
+###
+
+GET {{HostAddress}}/Biblioteka/Najcitanija/1
+Accept: application/json
+
+###
+
+PUT  {{HostAddress}}/Biblioteka/IzdavanjeVracanjeKnjige/1/8
+Accept: application/json
+
+###
+
+POST {{HostAddress}}/Biblioteka/DodavanjeKnjige/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "Naslov":"Nova knjiga", 
+    "Autor":"Neko", 
+    "GodinaIzdavanja":2002,
+    "Izdavac":"Laguna",
+    "BrojUEvidenciji":"1234567"
+}
+
+###
+

@@ -1,0 +1,79 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f0f0f0; }
+
+h2 { background-color: #333; color: white; padding: 10px; margin-bottom: 0; text-align: center; }
+
+.projekcija-kontejner {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 40px;
+    gap: 20px;
+    min-height: 200px;
+}
+
+/* Fiksna sirina 350px po zahtevu zadatka */
+.kupovina-sekcija {
+    width: 350px;
+    flex-shrink: 0;
+    border-right: 2px solid #eee;
+    padding-right: 20px;
+}
+
+.input-grupa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-grupa label { font-weight: bold; }
+.input-grupa input { width: 180px; padding: 5px; border: 1px solid #ccc; background-color: #f9f9f9; }
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background-color: #000000; color: #ffffff; }
+
+/* Responsive deo za salu */
+.sala-sekcija {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.red-sedista {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sediste-box {
+    border: 1px solid #333;
+    padding: 15px 5px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    transition: transform 0.1s;
+}
+
+.slobodno { background-color: #adff2f; cursor: pointer; }
+.zauzeto { background-color: #ff4d4d; color: white; }
+.selektovano { outline: 4px solid #0056b3; transform: scale(1.05); }
+
+/* Mobilna verzija (Responsive) */
+@media (max-width: 800px) {
+    .projekcija-kontejner { flex-direction: column; }
+    .kupovina-sekcija { width: 100%; border-right: none; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+}
