@@ -1,0 +1,77 @@
+    .tataDiv {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .inputDiv {
+        padding: 20px;
+        grid-template-columns: 1fr 2fr;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        row-gap: 10px;
+        display: grid;
+
+        text-align: left;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .selectPolje {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .kartica {
+        display: grid;
+        height: 450px;
+        /* Sve kartice će biti tačno ovolike */
+        min-width: 100px;
+        min-width: 250px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border: 1px solid black;
+        flex: 1 1 300px;
+
+    }
+
+    .redText {
+        color: red;
+        font-weight: bold;
+    }
+
+    .levi label {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .k1El {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 10px;
+    }
+
+    h3 {
+        grid-row: 1;
+        /* Ide u prvi red */
+        text-align: center;
+        /* Centriranje teksta */
+        margin: 15px 0;
+        /* Malo razmaka oko naslova */
+        width: 100%;
+    }
+
+    .column2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }

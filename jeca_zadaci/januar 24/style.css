@@ -1,0 +1,62 @@
+.tatadiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desniDiv {
+    display: flex;
+    border: 2px dotted black;
+    padding: 20px;
+    flex: 1;
+    row-gap: 50px;
+    width: auto;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    display: grid;
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+    width: 190px;
+    border: 2px solid black;
+
+}
+
+.pretraziBtn {
+    width: 100%;
+    height: 40px;
+    margin-top: auto;
+}
+
+.leviDiv {
+    display: grid;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    margin-top: 0px;
+    min-height: 100px;
+    border: 2px dotted black;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    padding: 10px;
+
+}
+
+.sd12 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sd23 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.dugmence {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

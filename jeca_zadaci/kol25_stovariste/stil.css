@@ -1,0 +1,59 @@
+.tatadiv {
+    width: 100%;
+    text-align: center;
+}
+
+div {
+    border-radius: 5px;
+}
+
+.jedanRedDiv {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.kartica {
+    border: 1px solid black;
+    padding: 10px;
+    flex: 1 1 300px;
+    min-height: 200px;
+}
+
+.inputDivLevi {
+    display: grid;
+    border: 2px solid red;
+    padding: 5px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.inputLevi {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.btn2row {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.dugmenceSrednje {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.divInputSrednji {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+}
+
+.inputSrednji {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

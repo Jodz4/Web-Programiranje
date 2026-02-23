@@ -1,0 +1,75 @@
+.ceoLeviDeo {
+    width: 500px;
+    display: flex;
+    flex: 1 500px;
+    flex-wrap: wrap;
+    flex: 2;
+
+}
+
+.tatadiv {
+    display: flex;
+}
+
+.selectDiv,
+.selectDiv2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 20px;
+    border: 3px dotted black;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.kartica {
+    display: flex;
+    flex: 1;
+    margin: 20px;
+    height: auto;
+    width: 40px;
+
+}
+
+.redK {
+    background-color: rgb(240, 122, 122);
+}
+
+.greenK,
+.redK {
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.greenK {
+    background-color: rgb(165, 244, 165);
+}
+
+.dugmenceSelect {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.sd23 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.desniDiv {
+    width: 500px;
+    display: flex;
+    flex: 1;
+}
+
+.sd12 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.karticaZaGrid {
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    padding: 5px;
+    width: 40px;
+    row-gap: 5px;
+}

@@ -1,0 +1,58 @@
+.forma {
+    display: grid;
+    background-color: beige;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    border: 2px solid black;
+    width: 350px;
+    row-gap: 20px;
+}
+
+.gridColumn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.pdiv,
+.kdiv {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid black;
+    row-gap: 20px;
+    background-color: honeydew;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+
+.chechkbox-stavka {
+    flex-wrap: wrap;
+}
+
+.student {
+    border: 2px solid lightsalmon;
+    display: grid;
+    /* 10 redova po 20px + prostor za ime */
+    grid-template-rows: repeat(10, 20px) 40px;
+    /* Ukloni grid-auto-flow: column jer ručno zadajemo gridColumnStart */
+    grid-auto-columns: 35px;
+    align-items: stretch;
+    /* Stubić će se rastegnuti kroz redove */
+    gap: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    height: auto;
+    background-color: white;
+}
+
+.ocdiv {
+    background-color: darkorange;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px 4px 0 0;
+    /* UKLONI bilo kakav height: 20px ovde! */
+}
